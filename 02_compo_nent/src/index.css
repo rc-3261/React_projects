@@ -1,0 +1,51 @@
+body{
+  background-color: #f5d7f8;
+  text-align: center;
+}
+
+
+.card {
+  width: auto;
+  border-radius: 20px;
+  background-color: #9f20aa;
+  padding: 20px;
+  margin: 20px;
+
+  /* Popup animation */
+  animation: popup 0.6s ease-out;
+}
+
+@keyframes popup {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+
+  70% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.card {
+  transition: transform 0.6s ease;
+}
+
+
+.card:hover {
+  transform: scale(1.08);
+}
+
+.nav{
+  background-color: #da3949;
+  padding: 10px;
+  margin-top: 2px;
+  margin-bottom: 7px;
+  justify-content: space-between;
+}
+
+
